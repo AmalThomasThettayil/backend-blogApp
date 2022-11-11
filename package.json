@@ -4,8 +4,9 @@
   "description": "a blog site",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
-    "server": "nodemone index.js"
+    "start": "node index.js",
+    "server": "node index.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install"
   },
   "author": "Amal",
   "license": "ISC",
