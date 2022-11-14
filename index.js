@@ -27,6 +27,7 @@ app.use(express.json())
 // cors
 app.use(cors({
     origin: ["https://express-ten-zeta.vercel.app"],
+    methods: ['GET', 'POST', "PUT", "PATCH"],
     credentials: true,
 }
 ))
