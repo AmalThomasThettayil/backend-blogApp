@@ -25,11 +25,11 @@ app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 app.use(express.json())
 
 // cors
-app.use(cors({
-    origin: ["https://express-ten-zeta.vercel.app"],
-    credentials: true,
-}
-))
+// app.use(cors({
+//     origin: ["https://express-ten-zeta.vercel.app"],
+//     credentials: true,
+// }
+// ))
 
 // app.use(cors())
 
