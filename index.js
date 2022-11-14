@@ -24,14 +24,14 @@ app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 //middleware
 app.use(express.json())
 
-//cors
-// app.use(cors({
-//     origin: ["https://express-ten-zeta.vercel.app"],
-//     credentials: true,
-// }
-// ))
+// cors
+app.use(cors({
+    origin: ["https://express-ten-zeta.vercel.app"],
+    credentials: true,
+}
+))
 
-app.use(cors())
+// app.use(cors())
 
 //users route
 app.use("/api", userRoutes)
